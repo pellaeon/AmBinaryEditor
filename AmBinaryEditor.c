@@ -505,7 +505,7 @@ static int InitAttribute(PARSER *ap, ATTRIBUTE *attr, const char *name, uint32_t
 	{
         if (strcmp(value, "true") == 0)
         {
-            attr->data = 1;
+            attr->data = (uint32_t)0xffffffff;
         }
         else if (strcmp(value, "false") == 0)
         {
